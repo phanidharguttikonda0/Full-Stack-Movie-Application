@@ -1,0 +1,82 @@
+.search-container {
+    padding: 6rem 2rem 2rem;
+}
+
+.search-box {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-color);
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+    z-index: 100;
+}
+
+.suggestion-item {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background: var(--bg-color);
+}
+
+.search-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.movie-card {
+    position: relative;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.movie-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    border-radius: 0 0 4px 4px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFlix - Search</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/search.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+                <path d="M12 2H2v20h20V2zM7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/>
+            </svg>
+            <h1>MovieFlix</h1>
+        </div>
+        <div class="nav-links">
+            <a href="/home.html">Home</a>
+            <a href="/search.html" class="active">Search</a>
+            <a href="/trending.html">Trending</a>
+            <a href="/profile.html">Profile</a>
+        </div>
+    </nav>
+
+    <main class="search-container">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for movies...">
+            <div id="searchSuggestions" class="search-suggestions"></div>
+        </div>
+        <div id="searchResults" class="search-results"></div>
+    </main>
+
+    <!-- Movie Modal (same as home page) -->
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="/js/config.js"></script>
+    <script src="/js/search.js"></script>
+</body>
+</html>

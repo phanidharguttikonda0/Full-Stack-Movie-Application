@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFlix - Profile</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/profile.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+                <path d="M12 2H2v20h20V2zM7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/>
+            </svg>
+            <h1>MovieFlix</h1>
+        </div>
+        <div class="nav-links">
+            <a href="/home.html">Home</a>
+            <a href="/search.html">Search</a>
+            <a href="/trending.html">Trending</a>
+            <a href="/profile.html" class="active">Profile</a>
+        </div>
+    </nav>
+
+    <main class="profile-container">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </div>
+            <div class="profile-info">
+                <h2>User Profile</h2>
+                <p id="userEmail"></p>
+            </div>
+        </div>
+        <div class="profile-sections">
+            <section class="profile-section">
+                <h3>Watch History</h3>
+                <div id="watchHistory" class="history-grid"></div>
+            </section>
+            <section class="profile-section">
+                <h3>Favorite Movies</h3>
+                <div id="favoriteMovies" class="favorites-grid"></div>
+            </section>
+            <section class="profile-section">
+                <h3>Account Settings</h3>
+                <button id="logoutBtn" class="btn-primary">Logout</button>
+            </section>
+        </div>
+    </main>
+
+    <script src="/js/profile.js"></script>
+</body>
+</html>

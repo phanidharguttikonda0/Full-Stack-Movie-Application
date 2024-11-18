@@ -1,0 +1,78 @@
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.auth-box {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 3rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.logo-icon {
+    color: var(--primary-color);
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--secondary-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.auth-switch {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.auth-switch a {
+    color: var(--primary-color);
+    font-weight: 500;
+}
